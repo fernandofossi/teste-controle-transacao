@@ -31,7 +31,7 @@ public class Pet {
   @JoinColumn(
       name = "category_id",
       referencedColumnName = "id",
-      nullable = false)
+      nullable = true)
   private Category category;
   private String name;
   @OneToMany(
